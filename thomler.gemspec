@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Thomas Osborn"]
   spec.email         = ["trosborn@gmail.com"]
   spec.description   = %q{Ruby on Thomler}
-  spec.summary       = %q{Thomler is an opinionated MVC framework written in the Ruby programming language. All credit to REbuilding Rails.}
-  spec.homepage      = ""
+  spec.summary       = %q{Thomler is an opinionated MVC framework written in the Ruby programming language. All credit to Rebuilding Rails.}
+  spec.homepage      = "http://www.trosborn.com"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
