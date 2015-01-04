@@ -1,6 +1,6 @@
 require_relative "test_helper"
 
-class TestApp < Rulers::Application
+class TestApp < Thomler::Application
 end
 
 class ThomlerTestApp < Test::Unit::TestCase
