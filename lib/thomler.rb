@@ -5,10 +5,17 @@ require "thomler/routing"
 module Thomler
   class Application
     def call env
+      if env['PATH_INFO'] == '/favicon.ico'
+        return [404, {'Content-Type' => 'text/html'}, ["text"]]
+      end
       klass, act = get_controller_and_action(env)
       controller = klass.new(env)
-      text = controller.send(act)
-      [200, {'Content-Type' => 'text/html'}, ["Hello from Ruby on Thomler!"]]
+      begin
+        text = controller.send(act)
+      rescue Exception
+        return [404, {'Content-Type' => 'text/html'}, ["text"]]
+      end
+      [200, {'Content-Type' => 'text/html'}, ["text"]]
     end
   end
 
