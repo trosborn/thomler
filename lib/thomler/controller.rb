@@ -1,5 +1,9 @@
+require "thomler/file_model"
+
 module Thomler
   class Controller
+    include Thomler::Model
+
     def initialize env
       @env = env
     end

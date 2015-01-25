@@ -4,6 +4,7 @@ require "thomler/routing"
 require "thomler/utils"
 require "thomler/dependencies"
 require "thomler/controller"
+require "thomler/file_model"
 
 module Thomler
   class Application
