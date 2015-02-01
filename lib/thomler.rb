@@ -23,6 +23,6 @@ module Thomler
         [200, {'Content-Type' => 'text/html'}, [text]]
       end
     end
-  end
 
+  end
 end
